@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assemblages</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html" style="color: white; text-decoration: none;">Home</a>
+    <div class="dropdown">
+      <span style="cursor: pointer;">Menu</span>
+      <div class="dropdown-content">
+        <a href="objects.html">Our work on objects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>Assemblages</header>
+
+  <div class="container">
+
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/a.jpg" alt="Assemblage example" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>Assemblages are a collection of objects that must be stored, moved or handled together to form an item.
+          Predominantly in archaeology, an assemblage could include a large number of related objects.</p>
+        <p>Details of individual items in the assembly are underneath the item or inscribed onto the item, difficult to
+          read/interpret.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px;">
+      <img src="../images/a2.jpg" alt="3D flatbed scanner model" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>
+          Assemblages cannot be digitalised with photography alone, as there are many minute details on the objects that
+          can be difficult to capture via photography alone.
+          By utilising a 3D flatbed scanner, such as the LUTRACAD Flatbed, details all around the object can be
+          captured, which is important as it allows for viewers to have a more interactive experience.
+          By taking several photographs of the object, it is able to build a 3D model like the one you see on the left!
+          Furthermore, our trained volunteers will work alongside AI identification systems to verify automated
+          classifications and add contextual information that the scanners may have missed.
+        </p>
+        <p>In total, we believe that to digitise all assemblages it would take approximately 28 months with a cost of
+          $500,000 AUD.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer
+    style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Contact Us</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">OUR TERMS</h3>
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '↑ Top';
+    Object.assign(backToTop.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      padding: '10px 15px',
+      backgroundColor: '#005295',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      zIndex: '1000'
+    });
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(backToTop);
+  </script>
+</body>
+
+</html>

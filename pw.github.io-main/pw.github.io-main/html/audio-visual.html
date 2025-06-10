@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Audio Visual Objects</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <nav>
+    <a href="../index.html" style="color: white; text-decoration: none;">Home</a>
+    <div class="dropdown">
+      <span style="cursor: pointer;">Menu</span>
+      <div class="dropdown-content">
+        <a href="objects.html">Our work on objects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>Audio Visual Objects</header>
+
+  <div class="container">
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/v.jpg" alt="Roll film scanning" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>Roll film is usually a 35 mm color positive film or black and white negative, with cellulose acetate or polyester as the base, coated with highly sensitive silver halides or dye emulsions, capable of recording rich colors and fine grayscale. Due to the extreme sensitivity of the emulsion layer to light and high temperature, and the fact that the acetate substrate undergoes “acetization” over time to release acid gas and becomes brittle and bent, and the handwritten labels at the edge of the film are often difficult to identify due to fading or friction, during the entire digitalization process, the film must be placed in a professional ChromaGraph S 3900 scanner in a stable and low-dust environment. Scan frame by frame at a resolution of 4000 ppi.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px;">
+      <img src="../images/v2.jpg" alt="Glass plate scanning" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>The glass base plate is made of optical-grade glass substrate coated with wet or dry emulsion. Its common specifications are 4×5" or larger, and it was used in early high-fidelity photography. It is prone to cracks, scratches and emulsion peeling due to vibration, temperature and humidity fluctuations or mold erosion, and the edge inscriptions fade or get slightly damaged over time. All these pose extremely high requirements for digitalization. Our process is to place the base plate emulsion face down into the Epson V850 Pro flatbed scanner in a constant environment of 18–22 °C and 30–40 % RH. Multi-band high-resolution scanning was conducted successively with three light sources, namely ultraviolet (365 nm), visible light and near-infrared (850–1000 nm), at 6400 dpi. Then, the noise reduction, distortion correction and channel alignment of each channel image were carried out through an automated script. Handwritten inscriptions were extracted by OCR and cracks and mold spots were detected by AI. The final output is a 16-bit TIFF master, JP2 proxy and thumbnail. All data is seamlessly imported into Snowflake via Snowpipe to complete the automatic update and management of real-time tags, positions and quality status.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Contact Us</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">OUR TERMS</h3>
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '↑ Top';
+    Object.assign(backToTop.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      padding: '10px 15px',
+      backgroundColor: '#005295',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      zIndex: '1000'
+    });
+    backToTop.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+    document.body.appendChild(backToTop);
+  </script>
+</body>
+</html>

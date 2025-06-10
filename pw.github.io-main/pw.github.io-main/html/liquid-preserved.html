@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquid Preserved Objects</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html" style="color: white; text-decoration: none;">Home</a>
+    <div class="dropdown">
+      <span style="cursor: pointer;">Menu</span>
+      <div class="dropdown-content">
+        <a href="objects.html">Our work on objects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>Liquid Preserved Objects</header>
+
+  <div class="container">
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/h4.jpg" alt="Specimens in jars" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>These objects are preserved in jars filled with formalin or ethanol for preservation, which requires special
+          handling. Some objects may have labels placed inside the jar. A significant proportion of the museum’s
+          collection is stored this way.</p>
+        <p>These objects contain specimens that are stored in chemicals; trained staff are needed to handle safely with
+          protective equipment.</p>
+      </div>
+    </div>
+
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/h5.jpg" alt="X-ray CT scanner" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>
+          For these liquid preserved objects, CT scanning and AI can be utilised to create detailed 3D models, in a
+          similar fashion to The Open Vertebrates Project,
+          which is a free digital museum with a massive dataset of 3D models.
+        </p>
+        <p>To digitise every liquid preserved objects, it would take approximately 18 months and around $2,065,500 AUD.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px;">
+      <img src="../images/h3.jpg" alt="More info video thumbnail" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <button onclick="window.open('https://youtu.be/A-t-oWu0N_s','_blank')"
+          style="border: none; border-radius: 8px; padding: 12px 20px; background-color: #005295; color: white; font-weight: bold; cursor: pointer; transition: background 0.3s;">
+          Click here to know more !!!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer
+    style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Contact Us</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">OUR TERMS</h3>
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '↑ Top';
+    Object.assign(backToTop.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      padding: '10px 15px',
+      backgroundColor: '#005295',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      zIndex: '1000'
+    });
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(backToTop);
+  </script>
+</body>
+
+</html>
