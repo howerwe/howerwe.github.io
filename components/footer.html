@@ -1,0 +1,33 @@
+<footer style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 200px;">
+    <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+    <p>About Us</p>
+    <p>Our Team</p>
+    <p>Contact Us</p>
+  </div>
+  <div style="flex: 1; min-width: 200px;">
+    <h3 style="color: #00ff00;">OUR TERMS</h3>
+    <p>Terms and Conditions</p>
+    <p>Privacy Policy</p>
+    <p>Cookie Policy</p>
+  </div>
+</footer>
+<script>
+  const backToTop = document.createElement('button');
+  backToTop.textContent = '↑ Top';
+  Object.assign(backToTop.style, {
+    position: 'fixed',
+    bottom: '30px',
+    right: '30px',
+    padding: '10px 15px',
+    backgroundColor: '#005295',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    cursor: 'pointer',
+    fontSize: '16px',
+    zIndex: '1000'
+  });
+  backToTop.onclick = () => window.scrollTo({top: 0, behavior: 'smooth'});
+  document.body.appendChild(backToTop);
+</script>
