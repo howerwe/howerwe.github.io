@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paper Based Objects</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html" style="color: white; text-decoration: none;">Home</a>
+    <div class="dropdown">
+      <span style="cursor: pointer;">Menu</span>
+      <div class="dropdown-content">
+        <a href="objects.html">Our work on objects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>Paper Based Objects</header>
+
+  <div class="container">
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/pbo.jpg" alt="Paper object preservation" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>Paper Based Objects include bound books, loose documents, journals, articles, newspaper segments and art.
+          Most of these objects are in the Archives collection, however natural sciences and archaeology have a small
+          proportion.</p>
+        <p>These objects tend to be quite fragile and eroded due to old preservation.</p>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px;">
+      <img src="../images/pbo2.jpg" alt="ALICE Photography System" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>
+          Our solution for paper based objects takes inspiration from the ALICE system that the Natural History Museum
+          in London uses.
+          It takes multiple pictures at the same time and then reads the text from labels automatically to create
+          digital records.
+          800 specimens can be digitised each day through this method, allowing rapid digitization, detailed
+          record-keeping, and preservation of delicate labels.
+        </p>
+        <p>It’ll take approximately 28 months to complete digitisation of all paper based objects with it costing about
+          $14,500 AUD.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer
+    style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Contact Us</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">OUR TERMS</h3>
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '↑ Top';
+    Object.assign(backToTop.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      padding: '10px 15px',
+      backgroundColor: '#005295',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      zIndex: '1000'
+    });
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(backToTop);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Small Dry Objects</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html" style="color: white; text-decoration: none;">Home</a>
+    <div class="dropdown">
+      <span style="cursor: pointer;">Menu</span>
+      <div class="dropdown-content">
+        <a href="objects.html">Our work on objects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>Small Dry Objects</header>
+  <div class="container">
+    <!-- 第一部分：图片 coin.jpg + 文字描述 -->
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/coin.jpg" alt="Various small dry coins" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>Small Dry Objects include freely handled coins, beads, pottery fragments including some bearing labels or
+          inscriptions.</p>
+        <p>These objects have very high shape/material variability requires consistent framing. Labels and inscriptions
+          may be faint or worn, demanding high-resolution capture and image correction.</p>
+      </div>
+    </div>
+
+    <!-- 第二部分：图片 coin2.jpg + 文字描述 -->
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px;">
+      <img src="../images/coin2.jpg" alt="Automated coin recognition interface"
+        style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>These images are automated coin/object recognition on AWS: 11 SageMaker models classify obverse/reverse
+          images in seconds.</p>
+        <p>
+          Similar to assemblages small dry objects cannot be digitalised with photography alone, as there are many
+          minute details on the objects that can be difficult to capture via photography alone.
+          By utilising a 3D flatbed scanner, such as the LUTRACAD Flatbed, details all around the object can be
+          captured, which is important as it allows for viewers to have a more interactive experience.
+          Furthermore, our trained volunteers will work alongside AI identification systems to verify automated
+          classifications and add contextual information that the scanners may have missed.
+        </p>
+        <p>The time required to digitise all of these objects are approximately and will cost about $184,000 AUD.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer
+    style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Contact Us</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">OUR TERMS</h3>
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '↑ Top';
+    Object.assign(backToTop.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      padding: '10px 15px',
+      backgroundColor: '#005295',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      zIndex: '1000'
+    });
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(backToTop);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Large/Heavy Dry Objects</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <a href="../index.html" style="color: white; text-decoration: none;">Home</a>
+    <div class="dropdown">
+      <span style="cursor: pointer;">Menu</span>
+      <div class="dropdown-content">
+        <a href="objects.html">Our work on objects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header>Large/Heavy Dry Objects</header>
+
+  <div class="container">
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/h.jpg" alt="Large heavy dry object example" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>
+          Large and heavy objects include historical storage cabinets, and cultural artifacts. These items are
+          particularly challenging due to their weight and fragility and cannot be frequently moved without risk of
+          damage, requiring specialized imaging spaces and careful handling protocols.
+          In order to ensure this we propose implementing a mobile 3D photogrammetry rig - a portable framework equipped
+          with multiple high-resolution cameras and professional lighting systems.
+          The California PLOS Journal states that the rig is a system that captures hundreds of overlapping photographs
+          from all angles and then transforms them into a 3D model.
+          These digital models allow researchers and the public to explore artifacts virtually, providing unprecedented
+          access without any physical interaction or risk to the original objects.
+          To meet location tracking requirements, we have taken the CPCON groups research on Radio Frequency
+          Identification as our implementation method.
+          This technology is a mature and highly effective wireless identification solution that uses radio waves to
+          track and identify objects through its core components: tags, readers, and backend systems.
+          Large objects require specialized handling by professionals, but volunteers will contribute by researching and
+          adding historical context to digital records.
+        </p>
+        <p>These objects takes a large amount of space and need for special handling/ equipment.</p>
+      </div>
+    </div>
+
+
+    <div
+      style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px; margin-bottom: 20px;">
+      <img src="../images/h2.jpg" alt="Photogrammetry rig setup" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <p>We will use the Mobile 3D photogrammetry rig - portable framework with multiple high resolution cameras and
+          professional lighting systems to digitise Large/Heavy Dry Objects.</p>
+        <p>It’ll take approximately 12 months and about $2,020,000 AUD to fully digitise all Large/Heavy Dry Objects.
+        </p>
+      </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; background-color: #d8ecff; border-radius: 10px; padding: 20px;">
+      <img src="../images/h3.jpg" alt="More info video thumbnail" style="max-width: 300px; border-radius: 8px;" />
+      <div>
+        <button onclick="window.open('https://youtu.be/A-t-oWu0N_s','_blank')"
+          style="border: none; border-radius: 8px; padding: 12px 20px; background-color: #005295; color: white; font-weight: bold; cursor: pointer; transition: background 0.3s;">
+          Click here to know more !!!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <footer
+    style="background-color: #003d73; color: white; padding: 30px 20px; display: flex; justify-content: space-between; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">ENGAGE WITH US</h3>
+      <p>About Us</p>
+      <p>Our Team</p>
+      <p>Contact Us</p>
+    </div>
+    <div style="flex: 1; min-width: 200px;">
+      <h3 style="color: #00ff00;">OUR TERMS</h3>
+      <p>Terms and Conditions</p>
+      <p>Privacy Policy</p>
+      <p>Cookie Policy</p>
+    </div>
+  </footer>
+
+  <script>
+    const backToTop = document.createElement('button');
+    backToTop.textContent = '↑ Top';
+    Object.assign(backToTop.style, {
+      position: 'fixed',
+      bottom: '30px',
+      right: '30px',
+      padding: '10px 15px',
+      backgroundColor: '#005295',
+      color: 'white',
+      border: 'none',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px',
+      zIndex: '1000'
+    });
+    backToTop.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+    document.body.appendChild(backToTop);
+  </script>
+</body>
+
+</html>
